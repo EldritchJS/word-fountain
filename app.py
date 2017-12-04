@@ -15,7 +15,7 @@ args = parser.parse_args()
 
 server = os.getenv('SERVERS', args.servers)
 port = int(os.getenv('PORT', args.port))
-topic = os.getenv('QUEUE', args.queue)
+queue = os.getenv('QUEUE', args.queue)
 rate = int(os.getenv('RATE', args.rate))
 count = int(os.getenv('COUNT', args.count))
 

@@ -23,7 +23,7 @@ count = int(os.getenv('COUNT', args.count))
 
 #producer = KafkaProducer(bootstrap_servers=servers)
 dest = '/queue' + queue
-c = stomp.Connection([(server, port]))
+c = stomp.Connection([(server, port)])
 c.start()
 c.connect('daikon', 'daikon', wait=True)
 

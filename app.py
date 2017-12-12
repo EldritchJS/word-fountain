@@ -26,12 +26,11 @@ c = stomp.Connection([(server, port)])
 c.start()
 c.connect('daikon', 'daikon', wait=True)
 
-with open(filename, 'r') as f:
+with open(filename, 'r', encoding='utf-8') as f:
     liquors = f.readlines()
 
 while count:
-    with open(filename, 'r') as f:
-        c.send(body=random.choice(liquors).strip(), destination = dest)
-        count -= 1
-        time.sleep(1.0 / rate)
+    c.send(body=random.choice(liquors).strip(), destination = dest)
+    count -= 1
+    time.sleep(1.0 / rate)
 

@@ -11,7 +11,7 @@ parser.add_argument('--port', help = 'The AMQP port', default='61613')
 parser.add_argument('--queue', help='Queue to publish to', default='salesq')
 parser.add_argument('--rate', type=int, help='Records per second', default=1)
 parser.add_argument('--count', type=int, help='Total records to publish', default=-1)
-parser.add.argument('--filename', help='Data file', default='LiquorNames.txt')
+parser.add_argument('--filename', help='Data file', default='LiquorNames.txt')
 args = parser.parse_args()
 
 server = os.getenv('SERVERS', args.servers)

@@ -31,7 +31,7 @@ with open(filename, 'r') as f:
 
 while count:
     with open(filename, 'r') as f:
-        c.send(body=random.choice(words), destination = dest)
+        c.send(body=random.choice(liquors).strip(), destination = dest)
         count -= 1
         time.sleep(1.0 / rate)
 

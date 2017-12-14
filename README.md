@@ -1,6 +1,6 @@
 # Word Fountain
 
-Publish liquor sales to an AMQ-P topic using Stomp
+Publish liquor sales to an AMQ topic using Stomp
 
 ## Quick start
 

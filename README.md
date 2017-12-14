@@ -14,4 +14,4 @@ Publish liquor sales to an AMQ topic using Stomp
    python app.py
    ```
 
-1. Consume from the topic `salesq` to see the liquors
+1. Consume from the queue `salesq` to see the liquors

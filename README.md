@@ -1,6 +1,6 @@
 # Word Fountain
 
-Publish words to an Apache Kafka topic
+Publish liquor sales to an AMQ-P topic using Stomp
 
 ## Quick start
 
@@ -9,11 +9,9 @@ Publish words to an Apache Kafka topic
    pip install -r requirement.txt
    ```
 
-1. [Setup Apache Kafka](https://kafka.apache.org/documentation.html#quickstart)
-
 1. Run the app
    ```bash
    python app.py
    ```
 
-1. Consume from the topic `word-fountain` to see the words
+1. Consume from the topic `salesq` to see the liquors

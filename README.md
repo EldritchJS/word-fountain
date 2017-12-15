@@ -1,6 +1,6 @@
-# Word Fountain
+# equoid-data-publisher
 
-Publish liquor sales to an AMQ topic using Stomp
+Publish sales data to an AMQ topic using Stomp
 
 ## Quick start
 
@@ -14,4 +14,4 @@ Publish liquor sales to an AMQ topic using Stomp
    python app.py
    ```
 
-1. Consume from the queue `salesq` to see the liquors
+1. Consume from the queue `salesq` to see the data
